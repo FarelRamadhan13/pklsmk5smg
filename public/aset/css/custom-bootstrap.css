@@ -1,0 +1,243 @@
+/* 
+   SISTEM TEMA KUSTOM BOOTSTRAP 2026 
+   Cukup ubah variabel di bawah ini untuk mengganti seluruh warna aplikasi.
+*/
+:root {
+    /* --- 1. VARIABEL INDUK (WARNA HIJAU) --- */
+    --app-primary: #44be86;
+    /* Warna Hijau Utama */
+    --app-primary-rgb: 91, 223, 162;
+    /* Format RGB untuk transparansi */
+    --app-primary-hover: #87ccac;
+    /* Hijau lebih gelap untuk hover */
+
+    /* --- 2. PENYELARASAN VARIABEL BOOTSTRAP --- */
+    --bs-primary: var(--app-primary);
+    --bs-primary-rgb: var(--app-primary-rgb);
+    --bs-link-color: var(--app-primary);
+    --bs-link-hover-color: var(--app-primary-hover);
+    --bs-border-color: rgba(var(--app-primary-rgb), 0.2);
+
+    /* --- 3. KUSTOMISASI CARD (TEMA HIJAU TRANSPARAN) --- */
+    --bs-card-bg: rgba(var(--app-primary-rgb), 0.04);
+    /* Body hijau sangat tipis */
+    --bs-card-color: #1a3326;
+    /* Teks hijau gelap */
+    --bs-card-border-color: rgba(var(--app-primary-rgb), 0.15);
+    --bs-card-cap-bg: rgba(var(--app-primary-rgb), 0.08);
+    /* Header/Footer sedikit lebih pekat */
+    --bs-card-cap-color: var(--app-primary);
+    --bs-card-border-radius: 12px;
+}
+
+/* --- 4. TOMBOL (BUTTONS) --- */
+.btn-primary {
+    --bs-btn-bg: var(--app-primary);
+    --bs-btn-border-color: var(--app-primary);
+    --bs-btn-hover-bg: var(--app-primary-hover);
+    --bs-btn-hover-border-color: var(--app-primary-hover);
+    --bs-btn-focus-shadow-rgb: var(--app-primary-rgb);
+}
+
+/* --- 5. INPUT & FORM CONTROL (FOCUS RING) --- */
+.form-control:focus {
+    border-color: var(--app-primary);
+    /* Efek Ring Hijau Transparan */
+    box-shadow: 0 0 0 0.25rem rgba(var(--app-primary-rgb), 0.2);
+    color: #212529;
+    background-color: #fff;
+    outline: 0;
+}
+
+/* --- 6. PAGINATION (DATA TABLES COMPATIBLE) --- */
+.page-link {
+    color: var(--app-primary);
+    background-color: #fff;
+    border-color: var(--bs-card-border-color);
+}
+
+.page-link:hover {
+    color: var(--app-primary-hover);
+    background-color: rgba(var(--app-primary-rgb), 0.05);
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important;
+    background-color: var(--app-primary) !important;
+    border-color: var(--app-primary) !important;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--app-primary-rgb), 0.2);
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    background-color: #fff;
+    border-color: var(--bs-card-border-color);
+}
+
+/* --- 7. KOMPONEN CARD --- */
+.card {
+    /* Deklarasikan ulang variabel di sini agar pasti diterapkan ke anak-anaknya */
+    /* --bs-card-bg: rgba(var(--app-primary-rgb), 0.04); */
+    --bs-card-border-color: rgba(var(--app-primary-rgb), 0.15);
+
+    background-color: var(--bs-card-bg);
+    border: 1px solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+    overflow: hidden;
+    /* Memastikan header tidak menabrak radius */
+    backdrop-filter: blur(5px);
+    /* Efek modern glassmorphism */
+}
+
+.card:hover {
+    border-color: rgba(var(--app-primary-rgb), 0.3);
+    box-shadow: 0 8px 15px rgba(var(--app-primary-rgb), 0.1);
+}
+
+
+.card>.card-header {
+    /* Menggunakan !important untuk memenangkan perang spesifisitas */
+    background-color: rgba(var(--app-primary-rgb), 0.1) !important;
+    /* color: var(--app-primary) !important; */
+    border-bottom: 1px solid var(--bs-card-border-color) !important;
+    font-weight: 700;
+}
+
+.card-footer {
+    background-color: var(--bs-card-cap-bg);
+    border-top: 1px solid var(--bs-card-border-color);
+}
+
+.card-header.bg-body-tertiary,
+.card-header.bg-light {
+    background-color: transparent !important;
+}
+
+/* --- 8. NAVBAR & OFFCANVAS --- */
+.navbar {
+    background-color: rgb(var(--app-primary-rgb)) !important;
+
+    /* Menimpa warna primary dengan lapisan putih 80% di atasnya */
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6), 
+        rgba(255, 255, 255, 0.6)
+    ) !important;
+    
+    /* Pastikan background-blend-mode tidak dipakai agar tetap solid */
+    background-blend-mode: normal; 
+}
+
+/* Menimpa helper class Bootstrap */
+.bg-body-tertiary {
+    background-color: rgb(var(--app-primary-rgb)) !important;
+
+    /* Menimpa warna primary dengan lapisan putih 80% di atasnya */
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6), 
+        rgba(255, 255, 255, 0.6)
+    ) !important;
+    
+    /* Pastikan background-blend-mode tidak dipakai agar tetap solid */
+    background-blend-mode: normal; 
+}
+
+/* Ikon Hamburger Putih */
+.navbar-toggler {
+    border-color: rgba(33, 30, 30, 0.2);
+}
+
+/* .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+} */
+
+/* Panel Menu Geser (Offcanvas) */
+.navbar .offcanvas {
+    /* Background offcanvas menggunakan hijau sangat muda agar kontras dengan navbar */
+    --bs-offcanvas-bg: #f8fffb;
+    --bs-offcanvas-color: var(--app-primary);
+    border-left: 1px solid var(--bs-card-border-color);
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid var(--bs-card-border-color);
+}
+
+/* Warna link dalam Offcanvas */
+.offcanvas-body .nav-link {
+    color: #444 !important;
+    font-weight: 500;
+}
+
+.offcanvas-body .nav-link:hover,
+.offcanvas-body .nav-link.active {
+    color: var(--app-primary) !important;
+    background-color: rgba(var(--app-primary-rgb), 0.05);
+    border-radius: 8px;
+}
+
+/* Menyesuaikan tombol Close (X) agar terlihat di background terang */
+.offcanvas .btn-close {
+    opacity: 0.8;
+}
+
+
+/* --- 9. CUSTOM FORM SELECT --- */
+
+/* State Normal */
+.form-select {
+    border-color: var(--bs-card-border-color);
+    color: #212529;
+}
+
+/* State Focus (Saat diklik) */
+.form-select:focus {
+    border-color: var(--app-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--app-primary-rgb), 0.2);
+    outline: 0;
+}
+
+/* Mengubah warna icon panah select menjadi hijau */
+/* Kita menggunakan URL-encoded SVG agar warnanya selaras dengan --app-primary */
+/* .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23198754' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+} */
+
+/* --- 10. HOVER OPTION (LIMITASI BROWSER) --- */
+
+/**
+ * PENTING: Browser (Chrome, Safari, Edge) tidak mengizinkan kustomisasi warna biru 
+ * pada hover <option> demi alasan aksesibilitas sistem operasi.
+ * 
+ * Namun, ada satu trik CSS standar untuk mengubah warna teks yang dipilih 
+ * di beberapa browser modern:
+ */
+
+select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px var(--app-primary) inset !important;
+    color: #ffffff !important;
+}
+
+/* Jika Anda menggunakan plugin seperti Select2 atau Choices.js, 
+   warnanya baru bisa diubah total. Untuk select HTML bawaan, 
+   kita bisa memberikan warna pada background list-nya: */
+select {
+    background-color: #ffffff;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #444;
+    text-decoration: none;
+    background-color: var(--app-primary);
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6), 
+        rgba(255, 255, 255, 0.6)
+    ) !important;
+    
+    /* Pastikan background-blend-mode tidak dipakai agar tetap solid */
+    background-blend-mode: normal; 
+}

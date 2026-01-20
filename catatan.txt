@@ -1,0 +1,10 @@
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+ 
+ Hindari memodifikasi file konfigurasi atau route setelah cache diaktifkan, karena memerlukan perintah ulang untuk membersihkan cache (php artisan config:clear, php artisan route:clear, php artisan view:clear).
+
+
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear

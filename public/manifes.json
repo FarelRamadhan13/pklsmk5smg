@@ -1,0 +1,6 @@
+{
+    "name": "Aplikasi Fullscreen",
+    "short_name": "FullscreenApp",
+    "display": "standalone",
+    "start_url": "/login"
+}

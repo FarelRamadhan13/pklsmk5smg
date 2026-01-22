@@ -641,7 +641,7 @@ class SiswaLoginController extends Controller
         $pdf->setX($pdf->getX() + 8);
         
         $pdf->setFont('tahoma', '', 12);
-        $pdf->MultiCell(0, 7, 'Adapun jawaban Bpk/Ibu/Sdr untuk menerima/belum menerima siswa/siswi kami, dapat dikirim melalui email Urs Praktek Kerja Lapangan (email=info@smkn5smg.sch.id).', 0, 'J');
+        $pdf->MultiCell(0, 7, 'Adapun jawaban Bpk/Ibu/Sdr untuk menerima/belum menerima siswa/siswi kami, dapat dikirim melalui email Urs Praktek Kerja Lapangan (email=pklsmkn5smg@gmail.com).', 0, 'J');
         $pdf->setXY($pdf->getX() + 8, $pdf->getY() + 2);
         $pdf->setFont('tahoma', '', 12);
         $pdf->MultiCell(0, 7, 'Demikian Surat Permohonan PKL ini kami sampaikan. Atas perhatian, dukungan, serta kesediaannya disampaikan terima kasih. ', 0, 'J');

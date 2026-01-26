@@ -90,67 +90,28 @@
                             <label for="kelas">Kelas</label>
                             <select name="kelas" id="kelas" class="form-select @if($errors->has('kelas')) is-invalid @endif">
                                 <option value="" disabled selected hidden>Pilih Kelas</option>
-                                <option value="X PPLG 1" <?php if(old('kelas')){ if(old('kelas') == 'X PPLG 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'X PPLG 1'){ echo 'selected'; } } ?>>X PPLG 1</option>
-                                <option value="X PPLG 2" <?php if(old('kelas')){ if(old('kelas') == 'X PPLG 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'X PPLG 2'){ echo 'selected'; } } ?>>X PPLG 2</option>
-                                <option value="X PPLG 3" <?php if(old('kelas')){ if(old('kelas') == 'X PPLG 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'X PPLG 3'){ echo 'selected'; } } ?>>X PPLG 3</option>
-                                <option value="X TJKT 1" <?php if(old('kelas')){ if(old('kelas') == 'X TJKT 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TJKT 1'){ echo 'selected'; } } ?>>X TJKT 1</option>
-                                <option value="X TJKT 2" <?php if(old('kelas')){ if(old('kelas') == 'X TJKT 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TJKT 2'){ echo 'selected'; } } ?>>X TJKT 2</option>
-                                <option value="X TJKT 3" <?php if(old('kelas')){ if(old('kelas') == 'X TJKT 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TJKT 3'){ echo 'selected'; } } ?>>X TJKT 3</option>
-                                <option value="X TO 1" <?php if(old('kelas')){ if(old('kelas') == 'X TO 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TO 1'){ echo 'selected'; } } ?>>X TO 1</option>
-                                <option value="X TO 2" <?php if(old('kelas')){ if(old('kelas') == 'X TO 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TO 2'){ echo 'selected'; } } ?>>X TO 2</option>
-                                <option value="X TO 3" <?php if(old('kelas')){ if(old('kelas') == 'X TO 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TO 3'){ echo 'selected'; } } ?>>X TO 3</option>
-                                <option value="X TKI 1" <?php if(old('kelas')){ if(old('kelas') == 'X TKI 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TKI 1'){ echo 'selected'; } } ?>>X TKI 1</option>
-                                <option value="X TKI 2" <?php if(old('kelas')){ if(old('kelas') == 'X TKI 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TKI 2'){ echo 'selected'; } } ?>>X TKI 2</option>
-                                <option value="X TKI 3" <?php if(old('kelas')){ if(old('kelas') == 'X TKI 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TKI 3'){ echo 'selected'; } } ?>>X TKI 3</option>
-                                <option value="X TE 1" <?php if(old('kelas')){ if(old('kelas') == 'X TE 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TE 1'){ echo 'selected'; } } ?>>X TE 1</option>
-                                <option value="X TE 2" <?php if(old('kelas')){ if(old('kelas') == 'X TE 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TE 2'){ echo 'selected'; } } ?>>X TE 2</option>
-                                <option value="X TE 3" <?php if(old('kelas')){ if(old('kelas') == 'X TE 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'X TE 3'){ echo 'selected'; } } ?>>X TE 3</option>
-
-                                <option value="XI PPLG 1" <?php if(old('kelas')){ if(old('kelas') == 'XI PPLG 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI PPLG 1'){ echo 'selected'; } } ?>>XI PPLG 1</option>
-                                <option value="XI PPLG 2" <?php if(old('kelas')){ if(old('kelas') == 'XI PPLG 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI PPLG 2'){ echo 'selected'; } } ?>>XI PPLG 2</option>
-                                <option value="XI PPLG 3" <?php if(old('kelas')){ if(old('kelas') == 'XI PPLG 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI PPLG 3'){ echo 'selected'; } } ?>>XI PPLG 3</option>
-                                <option value="XI TJKT 1" <?php if(old('kelas')){ if(old('kelas') == 'XI TJKT 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TJKT 1'){ echo 'selected'; } } ?>>XI TJKT 1</option>
-                                <option value="XI TJKT 2" <?php if(old('kelas')){ if(old('kelas') == 'XI TJKT 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TJKT 2'){ echo 'selected'; } } ?>>XI TJKT 2</option>
-                                <option value="XI TJKT 3" <?php if(old('kelas')){ if(old('kelas') == 'XI TJKT 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TJKT 3'){ echo 'selected'; } } ?>>XI TJKT 3</option>
-                                <option value="XI TO 1" <?php if(old('kelas')){ if(old('kelas') == 'XI TO 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TO 1'){ echo 'selected'; } } ?>>XI TO 1</option>
-                                <option value="XI TO 2" <?php if(old('kelas')){ if(old('kelas') == 'XI TO 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TO 2'){ echo 'selected'; } } ?>>XI TO 2</option>
-                                <option value="XI TO 3" <?php if(old('kelas')){ if(old('kelas') == 'XI TO 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TO 3'){ echo 'selected'; } } ?>>XI TO 3</option>
-                                <option value="XI TKI 1" <?php if(old('kelas')){ if(old('kelas') == 'XI TKI 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TKI 1'){ echo 'selected'; } } ?>>XI TKI 1</option>
-                                <option value="XI TKI 2" <?php if(old('kelas')){ if(old('kelas') == 'XI TKI 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TKI 2'){ echo 'selected'; } } ?>>XI TKI 2</option>
-                                <option value="XI TKI 3" <?php if(old('kelas')){ if(old('kelas') == 'XI TKI 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TKI 3'){ echo 'selected'; } } ?>>XI TKI 3</option>
-                                <option value="XI TE 1" <?php if(old('kelas')){ if(old('kelas') == 'XI TE 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TE 1'){ echo 'selected'; } } ?>>XI TE 1</option>
-                                <option value="XI TE 2" <?php if(old('kelas')){ if(old('kelas') == 'XI TE 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TE 2'){ echo 'selected'; } } ?>>XI TE 2</option>
-                                <option value="XI TE 3" <?php if(old('kelas')){ if(old('kelas') == 'XI TE 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI TE 3'){ echo 'selected'; } } ?>>XI TE 3</option
-                                <option value="XI PG 1" <?php if(old('kelas')){ if(old('kelas') == 'XI PG 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI PG 1'){ echo 'selected'; } } ?>>XI PG 1</option>
-                                <option value="XI PG 2" <?php if(old('kelas')){ if(old('kelas') == 'XI PG 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI PG 2'){ echo 'selected'; } } ?>>XI PG 2</option>
-                                <option value="XI PG 3" <?php if(old('kelas')){ if(old('kelas') == 'XI PG 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI PG 3'){ echo 'selected'; } } ?>>XI PG 3</option>
-                                <option value="XI RPL 1" <?php if(old('kelas')){ if(old('kelas') == 'XI RPL 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI RPL 1'){ echo 'selected'; } } ?>>XI RPL 1</option>
-                                <option value="XI RPL 2" <?php if(old('kelas')){ if(old('kelas') == 'XI RPL 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI RPL 2'){ echo 'selected'; } } ?>>XI RPL 2</option>
-                                <option value="XI RPL 3" <?php if(old('kelas')){ if(old('kelas') == 'XI RPL 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XI RPL 3'){ echo 'selected'; } } ?>>XI RPL 3</option>
                                 
+                                @php
+                                    $daftarJurusan = $jurusan;
+                                    $daftarTingkat = ['XI', 'XII'];
+                                    $daftarNomor = [1, 2, 3];
+                                @endphp
 
-                                <option value="XII PPLG 1" <?php if(old('kelas')){ if(old('kelas') == 'XII PPLG 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII PPLG 1'){ echo 'selected'; } } ?>>XII PPLG 1</option>
-                                <option value="XII PPLG 2" <?php if(old('kelas')){ if(old('kelas') == 'XII PPLG 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII PPLG 2'){ echo 'selected'; } } ?>>XII PPLG 2</option>
-                                <option value="XII PPLG 3" <?php if(old('kelas')){ if(old('kelas') == 'XII PPLG 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII PPLG 3'){ echo 'selected'; } } ?>>XII PPLG 3</option>
-                                <option value="XII TJKT 1" <?php if(old('kelas')){ if(old('kelas') == 'XII TJKT 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TJKT 1'){ echo 'selected'; } } ?>>XII TJKT 1</option>
-                                <option value="XII TJKT 2" <?php if(old('kelas')){ if(old('kelas') == 'XII TJKT 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TJKT 2'){ echo 'selected'; } } ?>>XII TJKT 2</option>
-                                <option value="XII TJKT 3" <?php if(old('kelas')){ if(old('kelas') == 'XII TJKT 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TJKT 3'){ echo 'selected'; } } ?>>XII TJKT 3</option>
-                                <option value="XII TO 1" <?php if(old('kelas')){ if(old('kelas') == 'XII TO 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TO 1'){ echo 'selected'; } } ?>>XII TO 1</option>
-                                <option value="XII TO 2" <?php if(old('kelas')){ if(old('kelas') == 'XII TO 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TO 2'){ echo 'selected'; } } ?>>XII TO 2</option>
-                                <option value="XII TO 3" <?php if(old('kelas')){ if(old('kelas') == 'XII TO 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TO 3'){ echo 'selected'; } } ?>>XII TO 3</option>
-                                <option value="XII TKI 1" <?php if(old('kelas')){ if(old('kelas') == 'XII TKI 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TKI 1'){ echo 'selected'; } } ?>>XII TKI 1</option>
-                                <option value="XII TKI 2" <?php if(old('kelas')){ if(old('kelas') == 'XII TKI 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TKI 2'){ echo 'selected'; } } ?>>XII TKI 2</option>
-                                <option value="XII TKI 3" <?php if(old('kelas')){ if(old('kelas') == 'XII TKI 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TKI 3'){ echo 'selected'; } } ?>>XII TKI 3</option>
-                                <option value="XII TE 1" <?php if(old('kelas')){ if(old('kelas') == 'XII TE 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TE 1'){ echo 'selected'; } } ?>>XII TE 1</option>
-                                <option value="XII TE 2" <?php if(old('kelas')){ if(old('kelas') == 'XII TE 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TE 2'){ echo 'selected'; } } ?>>XII TE 2</option>
-                                <option value="XII TE 3" <?php if(old('kelas')){ if(old('kelas') == 'XII TE 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII TE 3'){ echo 'selected'; } } ?>>XII TE 3</option>
-                                <option value="XII PG 1" <?php if(old('kelas')){ if(old('kelas') == 'XII PG 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII PG 1'){ echo 'selected'; } } ?>>XII PG 1</option>
-                                <option value="XII PG 2" <?php if(old('kelas')){ if(old('kelas') == 'XII PG 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII PG 2'){ echo 'selected'; } } ?>>XII PG 2</option>
-                                <option value="XII PG 3" <?php if(old('kelas')){ if(old('kelas') == 'XII PG 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII PG 3'){ echo 'selected'; } } ?>>XII PG 3</option>
-                                <option value="XII RPL 1" <?php if(old('kelas')){ if(old('kelas') == 'XII RPL 1'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII RPL 1'){ echo 'selected'; } } ?>>XII RPL 1</option>
-                                <option value="XII RPL 2" <?php if(old('kelas')){ if(old('kelas') == 'XII RPL 2'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII RPL 2'){ echo 'selected'; } } ?>>XII RPL 2</option>
-                                <option value="XII RPL 3" <?php if(old('kelas')){ if(old('kelas') == 'XII RPL 3'){ echo 'selected'; }}else{ if($siswa->kelas == 'XII RPL 3'){ echo 'selected'; } } ?>>XII RPL 3</option>
-                                
+                                @foreach($daftarTingkat as $tingkat)
+                                    @foreach($daftarJurusan as $jrsn)
+                                        @foreach($daftarNomor as $nomor)
+                                            @php 
+                                                $namaKelas = "$tingkat $jrsn->nama_jurusan $nomor"; 
+                                                // Logika: Cek old value dulu, jika tidak ada baru cek data dari database ($siswa->kelas)
+                                                $isSelected = (old('kelas', $siswa->kelas ?? '') == $namaKelas) ? 'selected' : '';
+                                            @endphp
+                                            
+                                            <option value="{{ $namaKelas }}" {{ $isSelected }}>
+                                                {{ $namaKelas }}
+                                            </option>
+                                        @endforeach
+                                    @endforeach
+                                @endforeach
 
                             </select>
                             @if($errors->has('kelas')) 

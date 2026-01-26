@@ -8,7 +8,7 @@
      <meta name="keywords" content="smk negeri 5 semarang, magang, pkl, prakerin">
       <meta name="description" content="smk negeri 5 semarang">
       <meta name="distribution" content="Global">
-       <meta name="author" content="Farras Syuja">
+       <meta name="author" content="Univy">
 	<meta name="rating" content="General">
     <link rel="canonical" href="https://magang.smkn5semarang.sch.id/login">
     <title>{{$title}}</title>
@@ -23,7 +23,7 @@
           "url": "https://magang.smkn5semarang.sch.id/",
           "logo": "https://magang.smkn5semarang.sch.id/logo/logo.jpeg",
           "sameAs": [
-            "https://www.instagram.com/_syuja._/?next=%2F&hl=id",
+            "https://www.instagram.com/univy.skg/",
             "https://www.facebook.com/SMKNegeri5Semarang/",
             "https://www.instagram.com/sm3k_id/",
             "https://www.youtube.com/@smknegeri5semarang-official905",
@@ -840,7 +840,7 @@ var typed = new Typed('#nama_atas', options);
                               </div>
                         </div>
                         <div class="col-md-4 mt-3">
-                             <a class=" hover-me-dev text-decoration-none text-dark" href="https://www.instagram.com/_syuja._/?next=%2F&hl=id" target="_BLANK">Farras Syuja</a>
+                             <a class=" hover-me-dev text-decoration-none text-dark" href="https://www.instagram.com/univy.skg/" target="_BLANK">Univy</a>
                                 <div class="tooltip-dev">
                                   <p>Web Developer</p>
                                 </div>
@@ -852,7 +852,7 @@ var typed = new Typed('#nama_atas', options);
     </div>
     <footer class=' text-center text-light' style="background-color: rgb(18, 38, 49);">
         <br>
-        <p>&copy; 2024 - {{ date('Y') }} Syuja</p>
+        <p>&copy; Univy</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

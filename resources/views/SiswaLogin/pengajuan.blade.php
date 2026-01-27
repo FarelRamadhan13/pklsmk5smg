@@ -653,10 +653,10 @@ event.target.submit();
     var currentYear = new Date().getFullYear();
 
    
-    for (var i = 0; i < 2; i++) {
-        var startYear = currentYear + i;
-        var endYear = startYear + 1;
-        var optionText = startYear + '/' + endYear;
+    for (var i = 0; i < 3; i++) {
+    var startYear = currentYear + i - 1;
+    var endYear = startYear + 1;
+    var optionText = startYear + '/' + endYear;
         $('#tahunPelajaran').append('<option value="' + optionText + '">' + optionText + '</option>');
     }
     var mulai = new Date($('#mulai').val());
